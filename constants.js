@@ -1,20 +1,12 @@
-import {
-  Code2,
-  Smartphone,
-  Globe,
-  Database,
-  Layout,
-  Server,
-  Cpu,
-  Github,
-  Linkedin,
-  Mail,
-  ExternalLink,
-} from "lucide-react";
+import { Smartphone, Globe, Database, Layout, Server, Cpu } from "lucide-react";
 import HomeBanner from "./src/assets/Images/HomeBanner.png";
+import cwavehubImg from "./src/assets/Images/cwavehub.png";
+import detailxmechanicImg from "./src/assets/Images/detailxmechanic.png";
+import jackpepperImg from "./src/assets/Images/jackpepper.png";
+import risunsolarImg from "./src/assets/Images/risunsolar.png";
+import thedetailmechanicImg from "./src/assets/Images/thedetailmechanics.png";
 
-
-export { HomeBanner};
+export { HomeBanner };
 
 export const PERSONAL_INFO = {
   name: "Sanku Saiteja",
@@ -83,7 +75,7 @@ export const EXPERIENCE = [
     title: "React Native Mobile Application Developer",
     company: "Infasta Soft Solutions Private Ltd.",
     location: "Hyderabad",
-    period: "May 2024 – Present",
+    period: "May 2024 - Present",
     description: [
       "Full-time role focused on developing complex mobile ecosystems for pet services and logistics.",
       "Implementing real-time tracking using Geolocation and Firebase for pet transportation solutions.",
@@ -95,7 +87,7 @@ export const EXPERIENCE = [
     title: "Freelance Web & Mobile Developer",
     company: "Self-Employed",
     location: "Remote",
-    period: "2023 – Present",
+    period: "2023 - Present",
     description: [
       "Delivered end-to-end web solutions for diverse industries including automotive, solar energy, and agriculture.",
       "Built cross-platform mobile applications featuring multivendor e-commerce and home service booking systems.",
@@ -113,8 +105,8 @@ export const PROJECTS = {
         "A specialized pet delivery and transportation app with real-time tracking and live chat.",
       tech: ["React Native", "Firebase", "Geolocation", "Chat Engine"],
       features: ["Live Tracking", "Real-time Chat", "Service Booking"],
-      image:
-        "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&q=80&w=800",
+      image: "",
+      // "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&q=80&w=800",
       link: "#",
     },
     {
@@ -134,18 +126,39 @@ export const PROJECTS = {
   ],
   freelanceMobile: [
     {
-      title: "Expertspace",
+      title: "ExpertSpace",
       description:
-        "Home needs service request platform with an integrated multivendor e-commerce shop.",
-      tech: ["React Native", "Node.js", "Team Project"],
-      team: "Vijay (Backend), Sahil (React Native), Saiteja (React Native)",
+        "Service booking platform inspired by Urban Company for interior, event exhibition, and branding services, with an integrated ecommerce module.",
+      tech: [
+        "React Native",
+        "Firebase (FCM Token)",
+        "Node.js APIs",
+        "MySQL",
+        "Hostinger VPS",
+      ],
+      team: "Sahil (React Native), Saiteja (React Native + Backend APIs)",
       features: [
-        "Home Service Booking",
-        "Multivendor Shop",
-        "Team Collaboration",
+        "Interior, Event Exhibition and Branding Services",
+        "Integrated Ecommerce Module",
+        "Backend APIs with Node.js and MySQL",
       ],
       image:
         "https://images.unsplash.com/photo-1556911220-e152021bed33?auto=format&fit=crop&q=80&w=800",
+      link: "#",
+    },
+    {
+      title: "ExpertSpace Provider",
+      description:
+        "Provider-side app for service partners to manage job requests, status updates, and customer workflows in the same ExpertSpace ecosystem.",
+      tech: ["React Native", "Node.js APIs", "MySQL", "Hostinger VPS"],
+      team: "Sahil (Team Member), Saiteja (React Native + Backend APIs)",
+      features: [
+        "Provider Dashboard",
+        "Service Request Management",
+        "Realtime Notifications via FCM",
+      ],
+      image:
+        "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=800",
       link: "#",
     },
   ],
@@ -155,35 +168,57 @@ export const PROJECTS = {
       description:
         "Premium car and bike mechanical services showcase with direct WhatsApp enquiry integration.",
       tech: ["React", "Bootstrap", "WhatsApp API"],
-      image:
-        "https://images.unsplash.com/photo-1486006920555-c77dcf18193c?auto=format&fit=crop&q=80&w=800",
-      link: "#",
+      image: detailxmechanicImg,
+      link: "https://detailxmechanic.com/",
     },
     {
       title: "SolarRisun",
       description:
         "Solar panel installation website showcasing sustainable energy solutions and services.",
       tech: ["HTML5", "CSS3", "JavaScript", "Slick JS"],
-      image:
-        "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&q=80&w=800",
-      link: "#",
+      image: risunsolarImg,
+      link: "https://risunsolar.in/",
     },
     {
       title: "JackPepperfarms",
       description:
         "Agricultural product gallery with 20+ listings and WhatsApp-based enquiry flow.",
       tech: ["React", "Tailwind", "Responsive Design"],
-      image:
-        "https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=800",
-      link: "#",
+      image: jackpepperImg,
+      link: "https://jackpepperfarms.com/",
     },
     {
       title: "Detailingmaniacs",
       description:
         "High-end automotive detailing website focusing on luxury vehicle aesthetics and care.",
       tech: ["React", "Bootstrap", "Gallery System"],
+      image: thedetailmechanicImg,
+      link: "https://thedetailingmaniacs.in/",
+    },
+    {
+      title: "Srisai Security Services",
+      description:
+        "Website for a security services company that provides trained security guards for businesses and properties.",
+      tech: ["React", "Tailwind CSS", "Responsive Design"],
       image:
-        "https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&q=80&w=800",
+        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=80&w=800",
+      link: "#",
+    },
+    {
+      title: "CWaveHub",
+      description:
+        "IT startup company website showcasing services, company profile, and digital capabilities.",
+      tech: ["React", "Tailwind CSS", "Modern UI"],
+      image: cwavehubImg,
+      link: "https://cwavehub.com/",
+    },
+    {
+      title: "IDPS School Website",
+      description:
+        "Portfolio-style school website presenting academics, institution highlights, and campus information.",
+      tech: ["React", "Tailwind CSS", "Responsive Layout"],
+      image:
+        "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&q=80&w=800",
       link: "#",
     },
   ],
@@ -193,13 +228,13 @@ export const EDUCATION = [
   {
     degree: "Master of Computer Applications (MCA)",
     institution: "Aurora Degree And PG College Chikkadpally",
-    period: "2024 – 2026",
+    period: "2024 - 2026",
     grade: "Pursuing",
   },
   {
     degree: "Bachelor of Science in Computer Science",
     institution: "Sree Chaitanya Degree & PG College, Karimnagar",
-    period: "2021 – 2024",
+    period: "2021 - 2024",
     grade: "73%",
   },
 ];
@@ -209,5 +244,6 @@ export const NAV_LINKS = [
   { name: "Skills", href: "#skills" },
   { name: "Experience", href: "#experience" },
   { name: "Projects", href: "#projects" },
+  { name: "Education", href: "#education" },
   { name: "Contact", href: "#contact" },
 ];
